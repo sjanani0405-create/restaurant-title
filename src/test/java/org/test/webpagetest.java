@@ -16,14 +16,14 @@ import org.testng.annotations.Test;
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             Thread.sleep(2000);
-            driver.get(" https://github.com/Dev-bhuvan19/sample1.git");
+            driver.get("https://github.com/sjanani0405-create/restaurant-title.git");
         }
         @Test
         public void titleValidationTest() {
             String actualTitle = driver.getTitle();
             String expectedTitle = "\"restaurant-title\"";
             Assert.assertEquals(actualTitle, expectedTitle);
-            Assert.assertTrue(true, "Title should contain 'College'");
+            Assert.assertTrue(true, "Title should contain 'Restaurant'");
         }
         @AfterTest
         public void closeBrowser() throws InterruptedException {
