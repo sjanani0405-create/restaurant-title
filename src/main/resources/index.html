@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice & Grill - Online Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="restaurant-title">Spice & Grill</h1>
+    <div class="cart-summary">
+        Cart (<span id="cart-count">0</span>) | Total: $<span id="cart-total">0.00</span>
+    </div>
+</header>
+
+<main>
+    <!-- Category Filters -->
+    <section class="categories" id="category-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="starters">Starters</button>
+        <button class="filter-btn" data-category="mains">Main Course</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+    </section>
+
+    <div class="container">
+        <!-- Menu Display -->
+        <section class="menu-grid" id="menu-container">
+            <!-- Populated dynamically by app.js -->
+        </section>
+
+        <!-- Cart & Checkout -->
+        <aside class="cart-panel">
+            <h2>Your Order</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-btn" disabled>Place Order</button>
+            <p id="order-confirmation" class="hidden"></p>
+        </aside>
+    </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
