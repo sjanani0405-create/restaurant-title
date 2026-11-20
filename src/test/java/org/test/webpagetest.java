@@ -1,6 +1,4 @@
-package org.test;
 
-public class webpagetest {
     package org.test;
 
 
